@@ -10,8 +10,8 @@ a ,a:hover {
   display: flex;
   align-items: center;
   z-index:-1;
-  background: #000000;
   width: 100%;
+  background: #000000;
   min-height: 100% !important;
   position: fixed;
   color: #FFF;
@@ -20,61 +20,67 @@ a ,a:hover {
 #bg {
   z-index: -1;
   position: fixed;
-  height: 100%;
   width: 100%;
-  background: url('../img/bg.jpg') no-repeat center;
+  height: 100%;
+  background: url('../img/bg.jpg') center;
 }
 
-header {
+.header {
+  width: 100%;
   background: rgba(0, 0, 0, 0.6);
+  transition: 0.2s;
 }
 
-header .col-md-6 ul {
+.header .col-md-6:nth-child(1) {
+  padding: 70px 15px;
+}
+
+.header .col-md-6 ul {
   list-style: none;
   padding: 0;
 }
 
-header .col-md-6 li {
+.header .col-md-6 li {
   display: inline-block;
 }
 
-header .col-md-6:first-child ul li {
-  font-size: 3.5em;
+.header .col-md-6 a {
+  color: #FFF;
+}
+
+.header .col-md-6:first-child ul li {
   margin-right: 20px;
 }
 
-header .col-md-6:first-child ul li a {
+.header .col-md-6:first-child ul li a {
+  font-size: 3.5em;
   padding: 10px 15px;
   border-radius: 8px;
 }
 
-header .col-md-6:first-child ul li a:hover {
+.header .col-md-6:first-child ul li a:hover {
   background: rgba(20, 20, 20, 0.8);
   transition: 0.2s;
 }
 
-header .col-md-6:nth-child(2) ul li {
+.header .col-md-6:nth-child(2) ul li {
   font-size: 1.5em;
   margin: 10px 20px;
   background: rgba(0, 0, 0, 0);
 }
-header .col-md-6:nth-child(2) ul li a {
+.header .col-md-6:nth-child(2) ul li a {
   padding: 10px;
   font-weight: 700;
   border-radius: 8px;
 }
 
-header .col-md-6:nth-child(2) ul li a:hover {
+.header .col-md-6:nth-child(2) ul li a:hover {
   background: rgba(255, 255, 255, 1);
   transition: 0.2s;
   color: rgba(0, 0, 0, 0.9);
 }
 
-header .col-md-6 a {
-  color: #FFF;
-}
-
-header .col-md-6:nth-child(2) img {
+.insert-frame {
   padding: 10px;
 }
 
@@ -88,44 +94,182 @@ header .col-md-6:nth-child(2) img {
   flex-wrap: wrap;
 }
 
-header .col-md-6:nth-child(1) {
-  padding: 70px 15px;
-}
-
-#main .col-md-6 span {
+.titles-1 {
   font-family: 'Exo', sans-serif;
   font-weight: 700;
   font-size: 4em;
 }
 
-.vertical-center {
-  /*margin-top: 13%;*/
+.go-full-w {
   width: 100%;
 }
 
-footer {
+.footer {
   background: -webkit-linear-gradient(to top,rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.0));
   background: linear-gradient(to top,rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.0));
-  width: 100%;
   position: absolute;
   bottom: 0;
+  width: 100%;
   padding-top: 50px;
 }
 
-footer .col-md-12 p {
+.footer .col-md-12 p {
   margin: 10px;
   padding: 10px 10px 15px 10px;
 }
 
-footer .col-md-12 a {
+.footer .col-md-12 a {
   color: #FFF;
   border-radius: 5px;
   background: #3d75b5;
   padding: 0 5px;
 }
 
-footer .col-md-12 a:hover {
+.footer .col-md-12 a:hover {
   transition: 0.2s;
   color: #3d75b5;
   background: #FFF;
+}
+
+/* -- For ipad landscape - */
+
+@media screen and (max-width: 1024px) {
+  .header .col-md-6:nth-child(2) ul li {
+    margin: 10px;
+  }
+}
+
+/* -- For window 992 x 580 - */
+
+@media screen and (max-width: 992px) {
+  #main {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .header {
+    background: linear-gradient(to bottom,rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.0));
+    transition: 0.5s;
+  }
+
+  .header .col-md-6:first-child {
+    padding: 20px 5px;
+  }
+
+  .header .col-md-6:first-child ul li a {
+    font-size: 2.5em;
+    padding: 5px 10px;
+    border-radius: 8px;
+  }
+
+  .header .col-md-6:nth-child(2) ul li a {
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+  .footer {
+    display: block;
+    padding: 0;
+  }
+
+  .insert-frame {
+    height: 200px;
+  }
+
+  .row.is-flex{
+    display: block;
+  }
+
+}
+
+/* -- For - Ipad Portrait- */
+
+@media screen and (max-width: 768px) {
+  #main {
+    flex-direction: inherit;
+  }
+  .header {
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  .insert-frame {
+    height: 100%;
+  }
+
+  .header .col-md-6:first-child ul li a {
+    font-size: 3em;
+    padding: 10px 15px;
+    border-radius: 8px;
+  }
+
+  .header .col-md-6:nth-child(2) ul {
+    margin: 20px 15px;
+  }
+
+}
+
+/* -- For - Iphone6 plus portrait- 414px- */
+
+@media screen and (max-width: 414px) {
+  #main {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .header {
+    background: linear-gradient(to bottom,rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.0));
+    transition: 0.5s;
+  }
+
+  .header .col-md-6:first-child ul {
+    margin-top: 20px;
+  }
+
+  .header .col-md-6:nth-child(2) ul li a{
+    display: inline-block;
+    margin: 5px 2px 0px 2px;
+  }
+
+}
+
+/* -- For - Iphone6 plus landscape- 736px- */
+
+@media screen and (max-width: 736px) {
+  #main {
+    display: flex;
+    text-align: center;
+    position: absolute;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .header {
+    background: linear-gradient(to bottom,rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.0));
+    transition: 0.5s;
+  }
+
+
+  .header .col-md-6:first-child ul {
+    margin-top: 20px;
+  }
+
+  .header .col-md-6:nth-child(2) ul li a{
+    display: inline-block;
+    margin: 5px 2px 0px 2px;
+  }
+
+  .insert-frame {
+    position: absolute;
+    height: 227px;
+    margin: 2px;
+    padding: 0;
+    left: -46px;
+    top: -145px;
+    transform: rotate(50deg);
+  }
+
+  footer {
+    display: block;
+    position: static;
+  }
+
 }
