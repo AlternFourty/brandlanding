@@ -207,33 +207,9 @@ a ,a:hover {
 
 }
 
-/* -- For - Iphone6 plus portrait- 414px- */
-
-@media screen and (max-width: 414px) {
-  #main {
-    text-align: center;
-    flex-direction: column;
-  }
-
-  .header {
-    background: linear-gradient(to bottom,rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.0));
-    transition: 0.5s;
-  }
-
-  .header .col-md-6:first-child ul {
-    margin-top: 20px;
-  }
-
-  .header .col-md-6:nth-child(2) ul li a{
-    display: inline-block;
-    margin: 5px 2px 0px 2px;
-  }
-
-}
-
 /* -- For - Iphone6 plus landscape- 736px- */
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 736px) ,(-webkit-min-device-pixel-ratio: 3){
   #main {
     display: flex;
     text-align: center;
@@ -272,4 +248,239 @@ a ,a:hover {
     position: static;
   }
 
+}
+/* Android devices with 570 on viewport for 1.5DPR */
+@media screen and (max-width: 570px) {
+  .titles-1 {
+    font-size: 3.2em;
+  }
+
+  .header .col-md-6:first-child ul li {
+    margin-right: 10px;
+  }
+
+  .header .col-md-6:first-child ul li a {
+    font-size: 2.7em;
+    padding: 7px;
+
+  }
+
+  .header .col-md-6:nth-child(2) ul {
+    margin: 0 15px 20px 15px;
+  }
+  .header .col-md-6:nth-child(2) ul li {
+    margin: 0 auto;
+  }
+  .header .col-md-6:nth-child(2) ul li a{
+    margin: 2px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .insert-frame {
+      position: absolute;
+      height: 215px;
+      margin: 2px;
+      padding: 0;
+      left: -40px;
+      top: -172px;
+      transform: rotate(35deg);
+      transition: 0.5s;
+  }
+
+  .insert-frame:active {
+      height: 250px;
+  }
+}
+
+/* -- For - Iphone6 plus portrait- 414px- */
+
+@media screen and (max-width: 414px) and (-webkit-min-device-pixel-ratio: 3) {
+  #main {
+    text-align: center;
+  }
+
+  .titles-1 {
+    font-size: 3.7em;
+    display: block;
+    margin: 20px;
+  }
+
+  .header {
+    background: linear-gradient(to bottom,rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.0));
+    transition: 0.5s;
+    padding: 20px;
+  }
+
+  .header .col-md-6:first-child {
+    padding: 0;
+  }
+
+  .header .col-md-6:first-child ul {
+    margin: 0;
+  }
+
+  .insert-frame {
+    position: static;
+    transform: rotate(0deg);
+  }
+
+  .header .col-md-6:nth-child(2) ul {
+    padding: 10px 10px;
+    margin: 0 auto;
+  }
+
+  .header .col-md-6:nth-child(2) ul li {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 2px 0px 2px;
+  }
+
+}
+
+/* -- For - Iphone6 plus portrait- 412px- */
+
+@media screen and (max-width: 412px) {
+  #main {
+    text-align: center;
+  }
+
+  .titles-1 {
+    font-size: 3.5em;
+    display: block;
+  }
+
+  .header {
+    background: linear-gradient(to bottom,rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.0));
+    transition: 0.5s;
+    padding: 20px;
+  }
+
+  .header .col-md-6:first-child {
+    padding: 0;
+  }
+
+  .header .col-md-6:first-child ul {
+    margin: 0;
+  }
+
+  .insert-frame {
+    position: static;
+    transform: rotate(0deg);
+  }
+
+  .header .col-md-6:nth-child(2) ul {
+    padding: 0px 10px;
+    margin: 0 auto;
+  }
+
+  .header .col-md-6:nth-child(2) ul li {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 2px 0px 2px;
+  }
+
+}
+
+/* Iphone 6 With retina DPR 2 */
+
+@media screen and (max-width: 375px) and (-webkit-min-device-pixel-ratio: 2){
+  #main {
+    text-align: center;
+  }
+
+  .titles-1 {
+    font-size: 3.7em;
+    display: block;
+    margin: 20px;
+  }
+
+  .header {
+    background: linear-gradient(to bottom,rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.0));
+    transition: 0.5s;
+    padding: 20px;
+  }
+
+  .header .col-md-6:first-child {
+    padding: 0;
+  }
+
+  .header .col-md-6:first-child ul {
+    margin: 0;
+  }
+
+  .insert-frame {
+      position: absolute;
+      height: 227px;
+      margin: 2px;
+      padding: 0;
+      left: -70px;
+      top: 271px;
+      transform: rotate(35deg);
+      transition: 0.5s;
+  }
+
+  .header .col-md-6:nth-child(2) ul {
+    padding: 60px 10px;
+    margin: 0 auto;
+  }
+
+  .header .col-md-6:nth-child(2) ul li {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 2px 0px 2px;
+  }
+
+}
+
+/* Android devices with 320 on viewport for 1.5DPR */
+@media screen and (max-width: 320px) {
+
+  .header {
+    background: linear-gradient(to bottom,rgba(0, 0, 0, 1),rgba(0, 0, 0, 0));
+    transition: 0.5s;
+    position:static;
+    top: 0;
+  }
+
+  .header .col-md-6:first-child {
+    margin: 10px 0;
+  }
+
+  .titles-1 {
+    font-size: 3.2em;
+  }
+
+  .header .col-md-6:first-child ul li {
+    margin-right: 10px;
+  }
+
+  .header .col-md-6:first-child ul li a {
+    font-size: 2.7em;
+    padding: 7px;
+  }
+
+  .header .col-md-6:nth-child(2) ul li {
+    display: block;
+    margin: 0 auto;
+  }
+  .header .col-md-6:nth-child(2) ul li a{
+    margin: 2px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .insert-frame {
+      position: absolute;
+      height: 200px;
+      margin: 2px;
+      padding: 0;
+      left: -40px;
+      top: 181px;
+      transform: rotate(35deg);
+      transition: 0.5s;
+  }
+
+  .insert-frame:active {
+      height: 120%;
+  }
 }
