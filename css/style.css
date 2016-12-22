@@ -155,7 +155,7 @@ a ,a:hover {
     transition: 0.5s;
   }
 
-  .header .col-md-6:nth-child(2) ul{
+  .header .col-md-6:nth-child(2) ul {
     margin-bottom: 25px;
   }
 
@@ -169,7 +169,7 @@ a ,a:hover {
     font-size: 7em;
   }
 
-  .footer p{
+  .footer p {
     font-size: 2em;
   }
 
@@ -238,7 +238,7 @@ a ,a:hover {
     transition: 0.5s;
   }
 
-  .header .col-md-6:nth-child(2) ul{
+  .header .col-md-6:nth-child(2) ul {
     margin-bottom: 25px;
   }
 
@@ -252,7 +252,7 @@ a ,a:hover {
     font-size: 6em;
   }
 
-  .footer p{
+  .footer p {
     font-size: 1.5em;
   }
 }
@@ -295,7 +295,7 @@ a ,a:hover {
     z-index: -1;
   }
 
-  .footer p{
+  .footer p {
     font-size: 1.3em;
   }
 }
@@ -342,7 +342,7 @@ a ,a:hover {
     z-index: -1;
   }
 
-  .footer p{
+  .footer p {
     font-size: 1em;
   }
 
@@ -435,7 +435,7 @@ a ,a:hover {
   }
 
   .insert-frame {
-    content: url(../img/kongouhighres.png);
+    content: url('../img/kongouhighres.png');
     height: 600px;
     position: absolute;
     top: 213px;
@@ -588,10 +588,6 @@ a ,a:hover {
 }
 
 @media screen and (max-width: 350px) {
-  /*.header .col-md-6:nth-child(2) ul {
-    display: flex;
-    flex-direction: column;
-  }*/
   #bg {
     background: url('../img/bg.jpg') repeat fixed;
   }
@@ -618,12 +614,4 @@ a ,a:hover {
     padding-top: 50px;
     position: relative;
   }
-}
-
-@media screen and (max-width: 320px) {
-  .titles-1 {
-
-  }
-
-
 }
